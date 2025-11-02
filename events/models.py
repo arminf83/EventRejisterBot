@@ -24,7 +24,8 @@ class Event(models.Model):
     end_date = models.DateTimeField(null=True, blank=True)
     main_date = models.DateTimeField(null=True, blank=True)
     banner = models.ImageField(upload_to="event_files/", null=True, blank=True)
-    reminder_sent = models.BooleanField(default=False)
+   #reminder_sent = models.BooleanField(default=False)
+    last_reminder_date = models.DateTimeField(null=True, blank=True)
     reminder_message = models.TextField(blank=True, null=True)
     reminder_image = models.ImageField(upload_to="event_files/", blank=True, null=True)
 
@@ -50,8 +51,8 @@ class Registration(models.Model):
     event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='registrations')
     participant = models.ForeignKey(Participant, on_delete=models.CASCADE, related_name='registrations')
     created_at = models.DateTimeField(auto_now_add=True)
-    reminder_sent = models.BooleanField(default=False)
-
+   # reminder_sent = models.BooleanField(default=False)
+    last_reminder_date = models.DateTimeField(null=True, blank=True) 
     attendance = models.CharField(
         max_length=10,
         blank=True,

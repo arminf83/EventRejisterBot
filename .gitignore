@@ -1,0 +1,40 @@
+# Django
+*.log
+*.sqlite3
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.env
+media/
+db.sqlite3
+
+# Backup files
+*.save
+*.bak
+*.backup
+
+# Bot test files
+bot.py
+bot1.py
+bot2.py
+bot3.py
+best_bot.py
+xxbot.py
+test.txt
+db.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp

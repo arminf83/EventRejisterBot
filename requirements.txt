@@ -1,0 +1,6 @@
+Django>=4.2.0
+python-telegram-bot>=20.0
+python-dotenv>=1.0.0
+psycopg2-binary>=2.9.0
+openpyxl>=3.0.0
+jdatetime>=4.1.0
